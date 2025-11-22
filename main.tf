@@ -275,8 +275,8 @@ resource "aws_codedeploy_deployment_group" "ecs_dg" {
   
 # IAM Roles and Policies
 # IAM Role for ECS Task
-resource "aws_iam_role" "ecs_task_role" {
-  name = "ecs_task_role"
+resource "aws_iam_role" "ecs_task_role_app" {
+  name = "ecs_task_role_app"
 
   assume_role_policy = jsonencode({
     Version = "2012-10-17",
