@@ -53,8 +53,8 @@ resource "aws_iam_role_policy" "ecs_service_role_policy" {
 }
 */
 
-resource "aws_iam_role" "ecs_service_role" {
-  name = "ecs_service_role"
+resource "aws_iam_role" "ecs_service_role_app" {
+  name = "ecs_service_role_app"
 
   assume_role_policy = jsonencode({
     Version = "2012-10-17",
