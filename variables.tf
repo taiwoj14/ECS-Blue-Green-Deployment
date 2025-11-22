@@ -19,7 +19,7 @@ variable "container_name" {
 variable "image" {
   description = "The image URI"
   type        = string
-  default     = "ooghenekaro/myflaskapp:10"
+  default     = "josepht05/petclinic-1:10"
 }
 
 variable "memory" {
