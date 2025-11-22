@@ -3,7 +3,7 @@ import json
 
 # Define your ECS cluster name and task definition family
 TASK_DEFINITION_FAMILY = "app-task"
-NEW_IMAGE = "ooghenekaro/barbers-app-postgres"  # Replace with your Docker Hub image
+NEW_IMAGE = "josepht05/petclinic-1"  # Replace with your Docker Hub image
 CONTAINER_NAME = "app"  # Replace with your container name
 CLUSTER_NAME = "main-cluster"
 DEPLOYMENT_GROUP_NAME = "ecs-dg"
