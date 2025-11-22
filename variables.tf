@@ -37,7 +37,7 @@ variable "cpu" {
 variable "role_arn" {
   description = "The ARN of the IAM role"
   type        = string
-  default     = "arn:aws:iam::335871625378:role/ecsTaskExecutionRole"
+  default     = "arn:aws:iam:481195358488::role/ecsTaskExecutionRole"
 }
 
 variable "deployment_group" {
