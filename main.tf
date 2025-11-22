@@ -1,6 +1,6 @@
 # Define necessary providers
 provider "aws" {
-  region = "eu-west-2"
+  region = "us-east-1"
 }
 
 # Load Balancer Configuration
@@ -158,7 +158,7 @@ resource "aws_ecs_task_definition" "app" {
         logDriver = "awslogs"
         options = {
           "awslogs-group"         = "/ecs/app"
-          "awslogs-region"        = "eu-west-2"
+          "awslogs-region"        = "us-east-1"
           "awslogs-stream-prefix" = "ecs"
         }
       }
