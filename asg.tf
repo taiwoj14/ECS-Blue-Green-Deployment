@@ -14,10 +14,10 @@ data "aws_ami" "ecs_amazon_linux_2" {
 
 resource "aws_launch_template" "app_lt" {
   name_prefix   = "app-launch-template-"
-  image_id      = "ami-0825461707ff53743"
+  image_id      = "ami-0fa3fe0fa7920f68e"
   instance_type = "t3.micro"
 
-  key_name = "solo-access-key" # Replace with your key pair name
+  key_name = "MyAccessKeyPair" # Replace with your key pair name
   
    user_data = base64encode(<<-EOT
     #!/bin/bash
