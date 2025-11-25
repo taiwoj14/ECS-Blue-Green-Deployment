@@ -19,7 +19,7 @@ variable "container_name" {
 variable "image" {
   description = "The image URI"
   type        = string
-  default     = "ooghenekaro/myflaskapp:10"
+  default     = "ooghenekaro/barbers-app-postgres"
 }
 
 variable "memory" {
