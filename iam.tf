@@ -127,7 +127,7 @@ resource "aws_cloudwatch_log_group" "app_log_group" {
 }
 
 resource "aws_iam_policy" "ecs_task_logging_policy" {
-  name = "ecs_task_logging_policy"
+  name = "ecs_task_logging_policy_e"
   policy = jsonencode({
     Version = "2012-10-17",
     Statement = [
