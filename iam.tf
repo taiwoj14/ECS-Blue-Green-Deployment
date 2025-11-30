@@ -12,7 +12,7 @@ data "aws_iam_policy_document" "ecs_service_role_trust" {
 
 
 resource "aws_iam_role" "ecs_service_role" {
-  name               = "ecs_service_role"
+  name               = "ecs_service_role_e"
   assume_role_policy = data.aws_iam_policy_document.ecs_service_role_trust.json
 }
 
