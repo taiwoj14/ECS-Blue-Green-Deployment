@@ -213,7 +213,7 @@ resource "aws_ecs_service" "app" {
 
 # CodeDeploy Application
 resource "aws_codedeploy_app" "ecs_app" {
-  name              = "ecs-app"
+  name              = "ecs-app_e"
   compute_platform  = "ECS"
 }
 
@@ -357,7 +357,7 @@ resource "aws_iam_role_policy" "ecs_service_policy" {
 
 # Custom IAM Policy for ECS Task Secrets
 resource "aws_iam_policy" "ecs_task_secrets_policy" {
-  name        = "ecs_task_secrets_policy"
+  name        = "ecs_task_secrets_policy_e"
   description = "Policy to allow ECS tasks to access Secrets Manager secrets"
   
   policy = jsonencode({
