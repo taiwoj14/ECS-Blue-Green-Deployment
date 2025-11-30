@@ -3,7 +3,7 @@ resource "aws_s3_bucket" "appspec_bucket" {
   bucket = "tai-appspec-bucket" 
 
   tags = {
-    Name = "AppSpecBucket"
+    Name = "AppSpecBuckett"
   }
 }
 
