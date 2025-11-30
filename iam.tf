@@ -122,7 +122,7 @@ resource "aws_iam_role_policy" "ecs_service_policy" {
 
 
 resource "aws_cloudwatch_log_group" "app_log_group" {
-  name              = "/ecs/app"
+  name              = "/ecs/appy"
   retention_in_days = 7
 }
 
