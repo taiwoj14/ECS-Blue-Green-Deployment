@@ -71,7 +71,7 @@ data "aws_iam_policy_document" "codedeploy_role_policy" {
 
 
 resource "aws_iam_role" "codedeploy_role" {
-  name               = "bgcodepb_codedeploy_role"
+  name               = "bgcodepb_codedeploy_role_b"
   assume_role_policy = data.aws_iam_policy_document.codedeploy_assume_policy.json
 }
 
