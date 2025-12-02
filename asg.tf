@@ -71,7 +71,7 @@ resource "aws_autoscaling_group" "app_asg" {
 
 # Define IAM Role and Instance Profile for EC2 Instances
 resource "aws_iam_role" "ec2_instance_role" {
-  name = "ec2-instance-role_e"
+  name = "ec2-instance-role-e"
 
   assume_role_policy = jsonencode({
     Version = "2012-10-17",
